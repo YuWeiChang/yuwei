@@ -50,7 +50,13 @@
     $(document).ready(function() {
       $("#fb").mouseenter(function(){
         $("#fb").addClass("animated shake");
-      });     
+        $("#fb").css("color", "yellow");
+        $("#fb").css("background", "blue");
+      });
+      $("#fb").mouseout(function(){
+        $("#fb").css("color", "blue");
+        $("#fb").css("background", "yellow");
+      });
       $("#gh").mouseenter(function(){
         $("#gh").css("color", "yellow");
         $("#gh").css("background", "blue");
