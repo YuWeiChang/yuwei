@@ -46,7 +46,9 @@
   <script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
   <script type='text/javascript'>
     $(document).ready(function() {
-      $("#fb").css("color", "red");
+      $("#fb").mouseenter(function(){
+        $("#fb").addClass("animated bounce");
+      });     
       $("#gh").mouseenter(function(){
         $("#gh").css("color", "yellow");
         $("#gh").css("background", "blue");
