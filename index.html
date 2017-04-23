@@ -43,16 +43,16 @@
       color: blue;
     }
   </style>
-	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $("#fb").mouseover(function(){
+      $("#fb").mouseenter(function(){
   	$(this).animate({
  	  backgroundColor: 'blue',
  	  color: 'yellow'
  	},300);
       });
-      $("#fb").mouseleave(function(){
+      $("#fb").mouseout(function(){
   	$(this).animate({
  	  backgroundColor: 'yellow',
  	  color: 'blue'
