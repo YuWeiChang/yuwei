@@ -46,8 +46,17 @@
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $("#fb").onclick(function(){
-  	$("#fb").addClass("change");
+      $("#fb").mouseover(function(){
+  	$("#fb").animate({
+ 	  backgroundColor: 'blue',
+ 	  color: 'yellow'
+ 	});
+      });
+      $("#fb").mouseout(function(){
+  	$("#fb").animate({
+ 	  backgroundColor: 'yellow',
+ 	  color: 'blue'
+ 	});
       });
     });
   </script>
