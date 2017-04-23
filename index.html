@@ -44,20 +44,9 @@
     }
   </style>
   <script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
-  <script type="text/javascript">
+  <script>
     $(document).ready(function() {
-      $("#fb").mouseenter(function(){
-  	$(this).animate({
- 	  backgroundColor: 'blue',
- 	  color: 'yellow'
- 	},300);
-      });
-      $("#fb").mouseout(function(){
-  	$(this).animate({
- 	  backgroundColor: 'yellow',
- 	  color: 'blue'
- 	},300);
-      });
+      $("button").addClass("btn-primary");
     });
   </script>
   <button class="btn btn-default target" id="fb" onclick="href='https://www.facebook.com/yuwie.chang'">Facebook</button>
