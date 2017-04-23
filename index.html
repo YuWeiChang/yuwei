@@ -47,13 +47,13 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#fb").mouseover(function(){
-  	$("#fb").animate({
+  	$(this).animate({
  	  backgroundColor: 'blue',
  	  color: 'yellow'
  	},300);
       });
       $("#fb").mouseleave(function(){
-  	$("#fb").animate({
+  	$(this).animate({
  	  backgroundColor: 'yellow',
  	  color: 'blue'
  	},300);
